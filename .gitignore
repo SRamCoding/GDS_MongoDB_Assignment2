@@ -1,1 +1,43 @@
 Repo-Assigment.txt
+.env
+cluster_credentials.txt
+schema-registry-credenciales.txt
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Config & secrets ---
+.env
+*.ini
+*.cfg
+*.toml
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs & temp files ---
+*.log
+*.out
+*.tmp
+.DS_Store
+Thumbs.db
+
+# --- Jupyter Notebooks checkpoints ---
+.ipynb_checkpoints/

@@ -1,0 +1,46 @@
+{
+  "doc": "Data contract for shipment events across services",
+  "fields": [
+    {
+      "doc": "Unique identifier for the shipment",
+      "name": "shipment_id",
+      "type": "string"
+    },
+    {
+      "doc": "Starting point of the shipment",
+      "name": "origin",
+      "type": "string"
+    },
+    {
+      "doc": "End point of the shipment",
+      "name": "destination",
+      "type": "string"
+    },
+    {
+      "doc": "Current status of the shipment",
+      "name": "status",
+      "type": {
+        "name": "ShipmentStatus",
+        "symbols": [
+          "pending",
+          "in_transit",
+          "delivered",
+          "cancelled",
+          "returned"
+        ],
+        "type": "enum"
+      }
+    },
+    {
+      "doc": "Event timestamp in UTC",
+      "name": "timestamp",
+      "type": {
+        "logicalType": "timestamp-millis",
+        "type": "long"
+      }
+    }
+  ],
+  "name": "ShipmentEvent",
+  "namespace": "com.example.logistics",
+  "type": "record"
+}
